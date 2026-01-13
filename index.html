@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Konsumsi Gula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sistem Informasi Monitoring Konsumsi Gula Harian</h1>
+        <p>Aplikasi edukatif untuk membantu masyarakat mengontrol asupan gula</p>
+        <a href="riwayat.html" style="color:white;">Lihat Riwayat</a>
+    </header>
+
+    <main>
+        <!-- Form Input -->
+        <section class="card">
+            <h2>Input Konsumsi Gula</h2>
+
+            <label for="tanggal">Tanggal Konsumsi</label>
+            <input type="date" id="tanggal">
+
+
+            <label for="makanan">Nama Makanan / Minuman</label>
+            <input type="text" id="makanan" placeholder="Contoh: Teh manis">
+
+<div class="row">
+    <div class="col">
+        <label for="gula">Gula per Sajian (gram)</label>
+        <input type="number" id="gula" placeholder="Contoh: 10">
+    </div>
+
+    <div class="col">
+        <label for="sajian">Jumlah Sajian (opsional)</label>
+        <input type="number" id="sajian" placeholder="Contoh: 2">
+    </div>
+</div>
+
+
+            <button onclick="hitungGula()">Hitung Konsumsi</button>
+        </section>
+
+        <!-- Hasil -->
+        <section class="card hasil">
+            <h2>Hasil Perhitungan</h2>
+            <p id="hasil">Belum ada data</p>
+
+            <div class="indikator">
+                <div id="bar"></div>
+            </div>
+        </section>
+        <section class="card edukasi">
+            <h2>Riwayat Konsumsi Harian</h2>
+            <ul id="riwayat">
+                <li>Belum ada riwayat</li>
+            </ul>
+        </section>
+        <!-- Edukasi -->
+        <section class="card edukasi">
+            <h2>Edukasi Konsumsi Gula</h2>
+            <ul>
+                <li>Batas konsumsi gula harian yang dianjurkan WHO adalah ±25–50 gram.</li>
+                <li>Konsumsi gula berlebih dapat meningkatkan risiko diabetes.</li>
+                <li>Kurangi minuman manis dan perbanyak air putih.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        
+        <p>© 2026 | Aplikasi Sistem Informasi Kesehatan Masyarakat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
